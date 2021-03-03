@@ -1,0 +1,32 @@
+<div class="hold-transition sidebar-mini layout-fixed mt-5">
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <div class="container">
+                <table datatable id="myTable" class="row-border hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Summary</th>
+                            <th>Last-date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let job of jobList">
+                            <td>1</td>
+                            <td>{{job.jobTitle}}</td>
+                            <td>{{job.location}}</td>
+                            <td>2021-02-05</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-info">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+ 
